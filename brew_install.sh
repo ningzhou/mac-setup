@@ -66,6 +66,7 @@ brew cask install --appdir="/Applications" iterm2
 brew cask install --appdir="/Applications" emacs
 brew cask install --appdir="~/Applications" xquartz
 brew cask install --appdir="~/Applications" karabiner-elements
+brew cask install --appdir="/Applications" scroll-reverser
 
 # Remove outdated versions from the cellar.
 brew cleanup
