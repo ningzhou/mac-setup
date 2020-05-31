@@ -38,6 +38,7 @@ function run_setup() {
             echo "Syncing the configuration files for a number of apps into home directory."
             echo "------------------------------"
             echo ""
+	    bash sync_config.sh
         fi
     done
 
