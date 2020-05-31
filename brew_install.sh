@@ -63,10 +63,14 @@ echo "------------------------------"
 # Core casks
 brew cask install --appdir="/Applications" alfred
 brew cask install --appdir="/Applications" iterm2
+brew cask install --appdir="/Applications" scroll-reverser
 brew cask install --appdir="/Applications" emacs
 brew cask install --appdir="~/Applications" xquartz
 brew cask install --appdir="~/Applications" karabiner-elements
-brew cask install --appdir="/Applications" scroll-reverser
+
+# Fonts
+brew tap homebrew/cask-fonts
+brew cask install font-dejavu
 
 # Remove outdated versions from the cellar.
 brew cleanup
