@@ -30,7 +30,7 @@ function run_setup() {
 	    echo "------------------------------"
 	    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 	    echo ""
-	fi
+        fi
 
         if [ $ARG == "config" ] || [ $ARG == "all" ]; then
             echo ""
@@ -40,6 +40,14 @@ function run_setup() {
             echo ""
 	    bash sync_config.sh
         fi
+
+        if [ $ARG == "dotfiles" ] || [ $ARG == "all" ]; then
+            echo ""
+            echo "------------------------------"
+            echo "Clone dot files from git and symbolically link to the right places"
+            echo "------------------------------"
+            echo ""
+	    bash symlink_dotfiles.sh
     done
 
     echo "------------------------------"
