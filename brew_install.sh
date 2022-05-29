@@ -14,7 +14,7 @@ if test ! $(which brew); then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/ningzho/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 
