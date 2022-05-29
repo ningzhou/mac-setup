@@ -47,7 +47,7 @@ function run_setup() {
             echo "Clone dot files from git and symbolically link to the right places"
             echo "------------------------------"
             echo ""
-	    bash symlink_dotfiles.sh
+	    bash symlink_dotfile.sh
         fi
     done
 
