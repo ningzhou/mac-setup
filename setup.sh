@@ -48,6 +48,7 @@ function run_setup() {
             echo "------------------------------"
             echo ""
 	    bash symlink_dotfiles.sh
+        fi
     done
 
     echo "------------------------------"

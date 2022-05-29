@@ -14,6 +14,10 @@ if test ! $(which brew); then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/ningzho/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+
 # Make sure we’re using the latest Homebrew.
 brew update
 
